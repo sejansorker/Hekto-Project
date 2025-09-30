@@ -6,3 +6,25 @@
     --font-main:"Josefin Sans",sans-serif;
     --font-loto:"Lato", sans-serif;
 }
+
+.slick-dots li{
+    display: inline-block;
+    margin: 0 7px;
+    background: #FEBAD7;
+    height: 5px;
+    width: 14px;
+    border-radius: 10px;
+    color: transparent;
+}
+.slick-dots .slick-active{
+    background: #FB2E86;
+    height: 5px;
+    width: 24px;
+    border-radius: 10px;
+}
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}

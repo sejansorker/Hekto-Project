@@ -4,7 +4,7 @@ import Logo from "../assets/hekto.png"
 import { IoIosArrowDown, IoIosSearch } from 'react-icons/io'
 const Navbar = () => {
   return (
-    <div>
+    <div className=''>
         <Container>
             <div className="flex py-5 ">
                 <div className="w-1/6">
@@ -13,12 +13,12 @@ const Navbar = () => {
                 <div className="w-3/6">
                 <div className="">
                     <ul className='flex gap-x-9 '>
-                        <li className='text-[#0D0E43] flex items-center gap-0.5 text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Home <IoIosArrowDown className='text-[14px]' /></li>
-                        <li className='text-[#0D0E43] text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Pages</li>
-                        <li className='text-[#0D0E43] text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Products</li>
-                        <li className='text-[#0D0E43] text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Blog </li>
-                        <li className='text-[#0D0E43] text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Shop</li>
-                        <li className='text-[#0D0E43] text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Contact</li>
+                        <li className='text-[#0D0E43] cursor-pointer flex items-center gap-0.5 text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Home <IoIosArrowDown className='text-[14px]' /></li>
+                        <li className='text-[#0D0E43] cursor-pointer text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Pages</li>
+                        <li className='text-[#0D0E43] cursor-pointer text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Products</li>
+                        <li className='text-[#0D0E43] cursor-pointer text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Blog </li>
+                        <li className='text-[#0D0E43] cursor-pointer text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Shop</li>
+                        <li className='text-[#0D0E43] cursor-pointer text-[16px] font-loto font-normal hover:text-[#FB2E86]'>Contact</li>
                     </ul>
                     </div>
                     </div>
@@ -33,5 +33,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar
