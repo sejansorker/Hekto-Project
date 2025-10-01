@@ -14,10 +14,14 @@ const Featured = () => {
     dots: true,
     infinite: true,
     arrows:false,
-    speed: 500,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 1000,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    
+    slidesToScroll: 1,
+    appendDots: dots => (
+    <ul > {dots.slice(0, Math.ceil(data.length / 8))} </ul>
+  )
   };
   return (
     <div className='mb-18'>
@@ -33,14 +37,14 @@ const Featured = () => {
                         <img src={item.thumbnail}  alt="" />    
                     </div>
                     <div className="py-4 text-center  bg-white duration-300 ease-in-out group-hover:bg-[#2F1AC4]">
-                       <h3 className='font-loto text-[18px] font-bold text-[#F701A8] group-hover:text-white'>Cantilever chair</h3>
+                       <h3 className='font-loto text-[18px] font-bold text-[#F701A8] group-hover:text-white'>{item.title}</h3>
                        <div className="flex justify-center gap-[5px] pt-3">
                         <div className="h-1 w-3.5 bg-[#05E6B7] rounded-full"></div>
                         <div className="h-1 w-3.5 bg-[#F701A8] rounded-full"></div>
                         <div className="h-1 w-3.5 bg-[#00009D] rounded-full"></div>
                        </div>
-                    <h5 className='py-3 font-main font-normal text-[14px]  group-hover:text-white text-[#151875]'>Code - Y523201</h5>
-                    <p className='font-loto font-normal text-[14px] group-hover:text-white text-[#151875]'>$42.00</p>
+                    <h5 className='py-3 font-main font-normal text-[14px]  group-hover:text-white text-[#151875]'>Code - {item.sku}</h5>
+                    <p className='font-loto font-normal text-[14px] group-hover:text-white text-[#151875]'>${item.price}</p>
                     </div>
                    </div>
                    <div className="flex gap-4 absolute top-3 left-3 opacity-0 group-hover:opacity-100 duration-300 ease-in-out">
