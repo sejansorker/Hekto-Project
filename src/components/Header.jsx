@@ -7,7 +7,7 @@ import { BsCart2 } from 'react-icons/bs'
 
 const Header = () => {
   return (
-    <div className='bg-top'>
+    <div className='bg-top '>
         <Container>
             <div className="flex  py-2.5 font-main justify-between">
                 <div className="w-1/3 flex gap-12">

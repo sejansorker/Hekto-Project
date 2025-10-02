@@ -14,14 +14,12 @@ const Featured = () => {
     dots: true,
     infinite: true,
     arrows:false,
-    speed: 2000,
+    speed: 500,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    appendDots: dots => (
-    <ul > {dots.slice(0, Math.ceil(data.length / 8))} </ul>
-  )
+    
   };
   return (
     <div className='mb-18'>
@@ -29,7 +27,8 @@ const Featured = () => {
           <div className="text-center pb-12">
             <h2 className='text-[42px] font-main font-bold text-[#1A0B5B]'>Featured Products</h2>
           </div>
-                <Slider {...settings}>
+               <div id='first'>
+                 <Slider {...settings}>
                   {furnitureProducts.map((item)=>(
                 <div className="!w-[96%] relative group">
                    <div className="bg-[#F6F7FB]">
@@ -65,6 +64,7 @@ const Featured = () => {
                   ))}
                  
                 </Slider>
+               </div>
             
         </Container>
     </div>

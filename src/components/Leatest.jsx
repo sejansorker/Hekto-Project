@@ -20,10 +20,10 @@ const Leatest = () => {
               <h2 className='text-prymari font-bold font-main text-[42px] pb-5'>Leatest Products</h2>
               <div className="pb-15">
                 <ul className='flex justify-center gap-15'>
-                  <li onClick={() => setOne("new")} className={`text-prymari cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>New Arrival</li>
-                  <li onClick={() => setOne("best")} className='text-prymari cursor-pointer hover:border-b-2 hover:border-red-500 text-[18px] font-normal font-loto hover:text-[#FB2E86]'>Best Seller</li>
-                  <li onClick={() => setOne("featured")} className='text-prymari hover:border-b-2 hover:border-red-500 cursor-pointer text-[18px] font-normal font-loto hover:text-[#FB2E86]'>Featured</li>
-                  <li onClick={() => setOne("specail")} className='text-prymari hover:border-b-2 hover:border-red-500 cursor-pointer text-[18px] font-normal font-loto hover:text-[#FB2E86]'>Special Offer</li>
+                  <li onClick={() => setOne("new")} className={`${one === "new" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>New Arrival</li>
+                  <li onClick={() => setOne("best")} className={`${one === "best" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Best Seller</li>
+                  <li onClick={() => setOne("featured")} className={`${one === "featured" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Featured</li>
+                  <li onClick={() => setOne("specail")} className={`${one === "specail" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Special Offer</li>
                 </ul>
               </div>
 

@@ -4,7 +4,7 @@ import Logo from "../assets/hekto.png"
 import { IoIosArrowDown, IoIosSearch } from 'react-icons/io'
 const Navbar = () => {
   return (
-    <div className=''>
+    <div className='sticky top-0 z-100 bg-white'>
         <Container>
             <div className="flex py-5 ">
                 <div className="w-1/6">
