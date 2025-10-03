@@ -2,6 +2,7 @@
 import Banner from "./components/Banner"
 import Discount from "./components/Discount"
 import Featured from "./components/Featured"
+import Footer from "./components/Footer"
 import Get from "./components/Get"
 import Header from "./components/Header"
 import Leatest from "./components/Leatest"
@@ -18,7 +19,7 @@ function App() {
   return (
     <>
     <Header/>
-    <Navbar/>
+    {/* <Navbar/>
     <Banner/>
     <Featured/>
     <Leatest/>
@@ -29,6 +30,7 @@ function App() {
     <Top/>
     <Get/>
     <LetestBlog/>
+    <Footer/> */}
     </>
   )
 }

@@ -9,6 +9,9 @@ const LetestBlog = () => {
     return (
         <div className='mb-25'>
             <Container>
+                <div className="w-1/3 m-auto text-center pb-15">
+                    <h2 className='font-main font-bold text-prymari text-[42px]'>Leatest Blog</h2>
+                </div>
                 <div className="flex gap-5">
                     <div className="w-1/3 group pb-5 bg-white shadow-lg shadow-black/10">
                         <div className="">
