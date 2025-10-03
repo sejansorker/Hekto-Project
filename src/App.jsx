@@ -19,11 +19,11 @@ function App() {
   return (
     <>
     <Header/>
-    {/* <Navbar/>
+    <Navbar/>
     <Banner/>
     <Featured/>
     <Leatest/>
-    <What/>
+    {/* <What/>
     <Unek/>
     <Tranding/>
     <Discount/>
