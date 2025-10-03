@@ -97,7 +97,7 @@ const Navbar = () => {
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#]'>Contact</li>
             </ul>
             <div
-              className={`fixed top-0 left-0 h-full w-[80%] bg-red-400 
+              className={`fixed top-0 left-0 h-full w-[80%] bg-[#4FB7B3] 
               transform transition-transform duration-500 ease-in-out z-40
               ${show ? "translate-x-0" : "-translate-x-full"}`}
             >

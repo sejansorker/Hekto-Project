@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import { ProductApi } from './ContextApi'
 
 
+
 const Featured = () => {
   const data = useContext(ProductApi)
   const furnitureProducts = data.filter(item => item.category === "furniture")
@@ -48,10 +49,10 @@ const Featured = () => {
   
   };
   return (
-    <div className='mb-18'>
+    <div className='mb-18 '>
         <Container>
-          <div className="text-center pb-12">
-            <h2 className='text-[42px] font-main font-bold text-[#1A0B5B]'>Featured Products</h2>
+          <div className="text-center lg:pb-12 pb-4">
+            <h2 className='text-[22px] lg:text-[42px] font-main font-bold text-[#1A0B5B]'>Featured Products</h2>
           </div>
                <div id='first'>
                  <Slider {...settings}>
@@ -61,7 +62,7 @@ const Featured = () => {
                      <div className=" pt-8 pb-5 pl-5  ">
                         <img className='w-full' src={item.thumbnail}  alt="" />    
                     </div>
-                    <div className="py-4 text-center  bg-white duration-300 ease-in-out group-hover:bg-[#2F1AC4]">
+                    <div className="py-4 text-center  bg-white duration-300 ease-in-out group-hover:bg-[#2F1AC4] z-1000">
                        <h3 className='font-loto text-[18px] font-bold text-[#F701A8] group-hover:text-white'>{item.title}</h3>
                        <div className="flex justify-center gap-[5px] pt-3">
                         <div className="h-1 w-3.5 bg-[#05E6B7] rounded-full"></div>
@@ -98,3 +99,8 @@ const Featured = () => {
 }
 
 export default Featured
+
+
+
+
+

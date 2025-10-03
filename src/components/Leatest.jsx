@@ -12,18 +12,18 @@ const Leatest = () => {
   
   
   return (
-    <div className='mt-15 mb-25'>
+    <div className='lg:mt-15 mt-6 lg:mb-25 mb-15'>
       <Container>
         <div className="">
-          <div className="w-5/12 mx-auto">
+          <div className="lg:w-5/12 w-full  mx-auto">
             <div className="text-center">
-              <h2 className='text-prymari font-bold font-main text-[42px] pb-5'>Leatest Products</h2>
-              <div className="pb-15">
-                <ul className='flex justify-center gap-15'>
-                  <li onClick={() => setOne("new")} className={`${one === "new" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>New Arrival</li>
-                  <li onClick={() => setOne("best")} className={`${one === "best" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Best Seller</li>
-                  <li onClick={() => setOne("featured")} className={`${one === "featured" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Featured</li>
-                  <li onClick={() => setOne("specail")} className={`${one === "specail" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Special Offer</li>
+              <h2 className='text-prymari font-bold font-main lg:text-[42px] text-[22px] lg:pb-5 pb-3'>Leatest Products</h2>
+              <div className="lg:pb-15 pb-7">
+                <ul className='flex justify-center lg:gap-x-15 gap-x-5'>
+                  <li onClick={() => setOne("new")} className={`${one === "new" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[14px] lg:text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>New Arrival</li>
+                  <li onClick={() => setOne("best")} className={`${one === "best" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[14px] lg:text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Best Seller</li>
+                  <li onClick={() => setOne("featured")} className={`${one === "featured" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[14px] lg:text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Featured</li>
+                  <li onClick={() => setOne("specail")} className={`${one === "specail" ? "border-b-2 border-red-500 text-[#FB2E86]":"text-prymari"}  cursor-pointer text-[14px] lg:text-[18px] font-normal font-loto hover:border-b-2 hover:border-red-500 hover:text-[#FB2E86]`}>Special Offer</li>
                 </ul>
               </div>
 
@@ -34,17 +34,17 @@ const Leatest = () => {
             <div className="">
               {
                 one === "new" &&
-                <div className="flex flex-wrap gap-y-10 justify-between ">
+                <div className="flex flex-wrap lg:gap-y-10 gap-y-5 justify-between ">
                   {safi.slice(0,6).map((item)=>(
                   <div className="w-[32%] relative group">
-                    <div className="pt-8 pb-2 bg-[#F7F7F7] hover:bg-white">
+                    <div className="lg:pt-8 pt-4 pb-2 bg-[#F7F7F7] hover:bg-white">
                       <img className='w-full' src={item.thumbnail} alt="" />
                     </div>
-                    <div className="flex justify-between items-center pt-4">
-                      <h6 className='text-prymari text-[16px] font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
+                    <div className="lg:flex justify-between items-center pt-4">
+                      <h6 className='text-prymari lg:text-[16px] text-[12px] w-fit font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
                       <div className="flex items-center gap-2.5 ">
-                        <p className='text-prymari text-[14px] font-main font-normal'>${item.price}</p>
-                        <del className='text-[#FB2448] text-[12px] font-main font-normal'>$15.00</del>
+                        <p className='text-prymari lg:text-[14px] lg:pt-0 pt-1 text-[10px] font-main font-normal'>${item.price}</p>
+                        <del className='text-[#FB2448] lg:pt-0 pt-1 lg:text-[12px] text-[8px] font-main font-normal'>$15.00</del>
                       </div>
                     </div>
                     <div className="gap-y-4 flex flex-col  absolute opacity-0 group-hover:opacity-100 bottom-15 left-5 duration-300 ease-in-out">

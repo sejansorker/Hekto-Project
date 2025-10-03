@@ -23,14 +23,14 @@ function App() {
     <Banner/>
     <Featured/>
     <Leatest/>
-    {/* <What/>
+    <What/>
     <Unek/>
     <Tranding/>
     <Discount/>
     <Top/>
     <Get/>
     <LetestBlog/>
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }
