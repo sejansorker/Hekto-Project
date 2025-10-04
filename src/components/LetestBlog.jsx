@@ -7,13 +7,13 @@ import { BsVectorPen } from 'react-icons/bs'
 import { FaRegCalendarAlt } from 'react-icons/fa'
 const LetestBlog = () => {
     return (
-        <div className='mb-25'>
+        <div className='lg:mb-25 mb-11'>
             <Container>
-                <div className="w-1/3 m-auto text-center pb-15">
-                    <h2 className='font-main font-bold text-prymari text-[42px]'>Leatest Blog</h2>
+                <div className="lg:w-1/3 w-full m-auto text-center pb-15">
+                    <h2 className='font-main font-bold text-prymari lg:text-[42px] text-[22px'>Leatest Blog</h2>
                 </div>
-                <div className="flex gap-5">
-                    <div className="w-1/3 group pb-5 bg-white shadow-lg shadow-black/10">
+                <div className="lg:flex lg:gap-x-5 ">
+                    <div className="lg:w-1/3 w-full group pb-5 bg-white shadow-lg shadow-black/10">
                         <div className="">
                             <img className='w-full' src={Frame} alt="" />
                         </div>
@@ -28,7 +28,7 @@ const LetestBlog = () => {
                         <u className='font-loto font-normal text-[16px] text-[#151875] group-hover:text-[#FB2E86] cursor-pointer'>Read More</u>
                        </div>
                     </div>
-                    <div className="w-1/3 group pb-5 bg-white shadow-lg shadow-black/10">
+                    <div className="lg:w-1/3 w-full group pb-5 bg-white shadow-lg shadow-black/10">
                         <div className="">
                             <img className='w-full' src={Frame1} alt="" />
                         </div>
@@ -43,7 +43,7 @@ const LetestBlog = () => {
                         <u className='font-loto font-normal text-[16px] text-[#151875] group-hover:text-[#FB2E86] cursor-pointer'>Read More</u>
                        </div>
                     </div>
-                    <div className="w-1/3 group pb-5 bg-white shadow-lg shadow-black/10">
+                    <div className="lg:w-1/3 w-full group pb-5 bg-white shadow-lg shadow-black/10">
                         <div className="">
                             <img className='w-full' src={Frame2} alt="" />
                         </div>

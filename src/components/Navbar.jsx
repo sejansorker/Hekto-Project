@@ -68,16 +68,21 @@
 
 
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import Logo from "../assets/hekto.png"
 import { IoIosArrowDown, IoIosSearch } from 'react-icons/io'
 import { HiMiniBars3CenterLeft } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
-
 const Navbar = () => {
   const [show, setShow] = useState(false)
-
+  useEffect(() => {
+    if (show) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "auto"
+    }
+  }, [show])
   return (
     <div className='sticky top-0 z-50 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]'>
       <Container>

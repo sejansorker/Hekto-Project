@@ -10,7 +10,7 @@ const Get = () => {
             <img src={Shop} alt="" />
         </div>
         <Container>
-            <div className="w-2/3 m-auto p-24">
+            <div className="w-2/3 m-auto lg:p-24 pb-10 lg:mt-0 mt-5">
             <img src={All} alt="" />
             </div>
         </Container>

@@ -39,7 +39,7 @@ const Featured = () => {
     }
   },
   {
-    breakpoint: 480,
+    breakpoint: 576,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1
@@ -57,7 +57,7 @@ const Featured = () => {
                <div id='first'>
                  <Slider {...settings}>
                   {furnitureProducts.map((item)=>(
-                <div className="!w-[96%] relative group mx-auto lg:ml-0 ml-2.5">
+                <div className="!w-[98%] lg:!w-[96%] relative group mx-auto lg:ml-0 ml-2.5">
                    <div className="bg-[#F6F7FB]">
                      <div className=" pt-8 pb-5 pl-5  ">
                         <img className='w-full' src={item.thumbnail}  alt="" />    

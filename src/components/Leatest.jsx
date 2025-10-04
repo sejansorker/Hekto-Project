@@ -69,17 +69,17 @@ const Leatest = () => {
             <div className="">
               {
                 one === "best" &&
-                <div className="flex flex-wrap gap-y-10 justify-between ">
+               <div className="flex flex-wrap lg:gap-y-10 gap-y-5 justify-between ">
                   {safi.slice(6,12).map((item)=>(
                   <div className="w-[32%] relative group">
-                    <div className="pt-8 pb-2 bg-[#F7F7F7] hover:bg-white">
+                    <div className="lg:pt-8 pt-4 pb-2 bg-[#F7F7F7] hover:bg-white">
                       <img className='w-full' src={item.thumbnail} alt="" />
                     </div>
-                    <div className="flex justify-between items-center pt-4">
-                      <h6 className='text-prymari text-[16px] font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
+                    <div className="lg:flex justify-between items-center pt-4">
+                      <h6 className='text-prymari lg:text-[16px] text-[12px] w-fit font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
                       <div className="flex items-center gap-2.5 ">
-                        <p className='text-prymari text-[14px] font-main font-normal'>${item.price}</p>
-                        <del className='text-[#FB2448] text-[12px] font-main font-normal'>$605.00</del>
+                        <p className='text-prymari lg:text-[14px] lg:pt-0 pt-1 text-[10px] font-main font-normal'>${item.price}</p>
+                        <del className='text-[#FB2448] lg:pt-0 pt-1 lg:text-[12px] text-[8px] font-main font-normal'>$15.00</del>
                       </div>
                     </div>
                     <div className="gap-y-4 flex flex-col  absolute opacity-0 group-hover:opacity-100 bottom-15 left-5 duration-300 ease-in-out">
@@ -104,17 +104,17 @@ const Leatest = () => {
             <div className="">
               {
                 one === "featured" &&
-                <div className="flex flex-wrap gap-y-10 justify-between ">
+               <div className="flex flex-wrap lg:gap-y-10 gap-y-5 justify-between ">
                   {safi.slice(12,18).map((item)=>(
                   <div className="w-[32%] relative group">
-                    <div className="pt-8 pb-2 bg-[#F7F7F7] hover:bg-white">
+                    <div className="lg:pt-8 pt-4 pb-2 bg-[#F7F7F7] hover:bg-white">
                       <img className='w-full' src={item.thumbnail} alt="" />
                     </div>
-                    <div className="flex justify-between items-center pt-4">
-                      <h6 className='text-prymari text-[16px] font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
+                    <div className="lg:flex justify-between items-center pt-4">
+                      <h6 className='text-prymari lg:text-[16px] text-[12px] w-fit font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
                       <div className="flex items-center gap-2.5 ">
-                        <p className='text-prymari text-[14px] font-main font-normal'>${item.price}</p>
-                        <del className='text-[#FB2448] text-[12px] font-main font-normal'>$605.00</del>
+                        <p className='text-prymari lg:text-[14px] lg:pt-0 pt-1 text-[10px] font-main font-normal'>${item.price}</p>
+                        <del className='text-[#FB2448] lg:pt-0 pt-1 lg:text-[12px] text-[8px] font-main font-normal'>$15.00</del>
                       </div>
                     </div>
                     <div className="gap-y-4 flex flex-col  absolute opacity-0 group-hover:opacity-100 bottom-15 left-5 duration-300 ease-in-out">
@@ -139,17 +139,17 @@ const Leatest = () => {
             <div className="">
               {
                  one === "specail" &&
-                <div className="flex flex-wrap gap-y-10 justify-between ">
+               <div className="flex flex-wrap lg:gap-y-10 gap-y-5 justify-between ">
                   {safi.slice(18,24).map((item)=>(
                   <div className="w-[32%] relative group">
-                    <div className="pt-8 pb-2 bg-[#F7F7F7] hover:bg-white">
+                    <div className="lg:pt-8 pt-4 pb-2 bg-[#F7F7F7] hover:bg-white">
                       <img className='w-full' src={item.thumbnail} alt="" />
                     </div>
-                    <div className="flex justify-between items-center pt-4">
-                      <h6 className='text-prymari text-[16px] font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
+                    <div className="lg:flex justify-between items-center pt-4">
+                      <h6 className='text-prymari lg:text-[16px] text-[12px] w-fit font-main font-normal border-b-2 border-[#EEEFFB]'>{item.title}</h6>
                       <div className="flex items-center gap-2.5 ">
-                        <p className='text-prymari text-[14px] font-main font-normal'>${item.price}</p>
-                        <del className='text-[#FB2448] text-[12px] font-main font-normal'>$605.00</del>
+                        <p className='text-prymari lg:text-[14px] lg:pt-0 pt-1 text-[10px] font-main font-normal'>${item.price}</p>
+                        <del className='text-[#FB2448] lg:pt-0 pt-1 lg:text-[12px] text-[8px] font-main font-normal'>$15.00</del>
                       </div>
                     </div>
                     <div className="gap-y-4 flex flex-col  absolute opacity-0 group-hover:opacity-100 bottom-15 left-5 duration-300 ease-in-out">
