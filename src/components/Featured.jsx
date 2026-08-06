@@ -5,9 +5,6 @@ import { CiHeart, CiShoppingCart } from 'react-icons/ci'
 import { FaSearchPlus } from 'react-icons/fa'
 import Slider from "react-slick";
 import { ProductApi } from './ContextApi'
-
-
-
 const Featured = () => {
   const data = useContext(ProductApi)
   const furnitureProducts = data.filter(item => item.category === "furniture")
@@ -22,6 +19,23 @@ const Featured = () => {
     slidesToScroll: 1,
     responsive: [
   {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: true
+    }
+  },
+  {
     breakpoint: 576,
     settings: {
       slidesToShow: 1,
@@ -29,7 +43,6 @@ const Featured = () => {
     }
   }
 ]
-  
   };
   return (
     <div className='mb-18 '>
@@ -38,8 +51,7 @@ const Featured = () => {
             <h2 className='text-[22px] lg:text-[42px] font-main font-bold text-[#1A0B5B]'>Featured Products</h2>
           </div>
                <div id='first'>
-                 <div className="w-full overflow-hidden">
-                  <Slider {...settings}>
+                 <Slider {...settings}>
                   {furnitureProducts.map((item)=>(
                 <div className="!w-[98%] lg:!w-[96%] relative group mx-auto lg:ml-0 ml-2.5">
                    <div className="bg-[#F6F7FB]">
@@ -75,7 +87,6 @@ const Featured = () => {
                   ))}
                  
                 </Slider>
-                 </div>
                </div>
             
         </Container>
@@ -83,9 +94,5 @@ const Featured = () => {
   )
 }
 
-export default Featured
-
-
-
-
+export default Featured 
 

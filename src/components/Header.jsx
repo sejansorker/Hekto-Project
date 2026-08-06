@@ -35,9 +35,9 @@ const Header = () => {
               </select>
               </div>
               <div className="flex lg:gap-x-5 gap-x-2">
-                <p className='flex text-[#F1F1F1] gap-0.5 font-semibold lg:text-[16px] text-[12px]'>Login <FaRegUser/></p>
-                <p className='flex text-[#F1F1F1] gap-[3px] font-semibold lg:text-[16px] text-[12px]'>Wishlist <FaRegHeart/></p>
-                <p className='text-[#F1F1F1] font-semibold lg:text-[19px] text-[14px]'><FiShoppingCart /></p>
+                <p className='flex items-center  text-[#F1F1F1] gap-x-1.5 font-semibold lg:text-[16px] text-[12px]'>Login <FaRegUser/></p>
+                <p className='flex items-center gap-x-1.5 text-[#F1F1F1] gap-[3px] font-semibold lg:text-[16px] text-[12px]'>Wishlist <FaRegHeart/></p>
+                <p className='text-[#F1F1F1] font-semibold lg:text-[19px] text-[14px] '><FiShoppingCart /></p>
               </div>
                 </div>
                 </div>
