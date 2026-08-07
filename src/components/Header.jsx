@@ -12,32 +12,32 @@ const Header = () => {
             <div className="lg:flex  lg:py-2.5 py-1 font-main lg:justify-between ">
                 <div className="lg:w-1/3  flex lg:gap-x-12 gap-x-3 lg:justify-start justify-center">
                    <div className="flex lg:gap-2.5 gap-1 items-center font-semibold text-[12px] lg:text-[16px] text-[#F1F1F1]">
-                     <MdOutlineMail />
-                    <p>sejansorker@gmail.com</p>
+                     <MdOutlineMail className=' cursor-pointer ' />
+                    <p className=' cursor-pointer '>sejansorker@gmail.com</p>
                    </div>
                    <div className="flex gap-1 lg:gap-3 items-center font-semibold text-[12px] lg:text-[16px] text-[#F1F1F1]">
-                    <FiPhoneCall />
-                    <p className=''>01780519010</p>
+                    <FiPhoneCall className='cursor-pointer' />
+                    <p className='cursor-pointer'>01780519010</p>
                    </div>
                 </div>
                 <div className="lg:w-1/3 flex lg:justify-end justify-center">
                 <div className="flex items-center lg:gap-x-4 gap-x-2 ">
               <div className="space-x-2 lg:space-x-4">
-                <select name="" id="" className='focus:outline-0 text-[#F1F1F1]  font-semibold lg:text-[16px] text-[12px]'>
+                <select name="" id="" className='focus:outline-0 cursor-pointer text-[#F1F1F1]  font-semibold lg:text-[16px] text-[12px]'>
                 <option value="" className=' text-black lg:text-[16px] text-[12px]' >English</option>
                 <option value="" className=' text-black lg:text-[16px] text-[12px]' >Bangla</option>
                 
               </select>
-              <select name="" id="" className='focus:outline-0 text-[#F1F1F1] font-semibold lg:text-[16px] text-[12px]'>
+              <select name="" id="" className='focus:outline-0 cursor-pointer text-[#F1F1F1] font-semibold lg:text-[16px] text-[12px]'>
                 <option value="" className=' text-black lg:text-[16px] text-[12px]' >USD</option>
                 <option value="" className=' text-black lg:text-[16px] text-[12px]' >BD</option>
                 
               </select>
               </div>
               <div className="flex lg:gap-x-5 gap-x-2">
-                <p className='flex items-center  text-[#F1F1F1] gap-x-1.5 font-semibold lg:text-[16px] text-[12px]'>Login <FaRegUser/></p>
-                <p className='flex items-center gap-x-1.5 text-[#F1F1F1] gap-[3px] font-semibold lg:text-[16px] text-[12px]'>Wishlist <FaRegHeart/></p>
-                <p className='text-[#F1F1F1] font-semibold lg:text-[19px] text-[14px] '><FiShoppingCart /></p>
+                <p className='flex items-center cursor-pointer text-[#F1F1F1] gap-x-1.5 font-semibold lg:text-[16px] text-[12px]'>Login <FaRegUser/></p>
+                <p className='flex items-center gap-x-1.5 text-[#F1F1F1] gap-[3px] font-semibold lg:text-[16px] text-[12px]  cursor-pointer'>Wishlist <FaRegHeart/></p>
+                <p className='text-[#F1F1F1] font-semibold lg:text-[19px] text-[14px] cursor-pointer'><FiShoppingCart /></p>
               </div>
                 </div>
                 </div>

@@ -65,6 +65,7 @@ import Logo from "../assets/hekto.png"
 import { IoIosArrowDown, IoIosSearch } from 'react-icons/io'
 import { HiMiniBars3CenterLeft } from 'react-icons/hi2'
 import { RxCross2 } from 'react-icons/rx'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [show, setShow] = useState(false)
   useEffect(() => {
@@ -83,13 +84,19 @@ const Navbar = () => {
           </div>
           <div className="lg:w-3/6 lg:mb-0 mb-3 ">
             <ul className="hidden lg:Visible lg:flex lg:gap-x-9 text-center ">
+              <Link to={"/"}>
               <li className='text-[#0D0E43] cursor-pointer flex items-center justify-center gap-0.5 text-[16px] font-loto font-normal hover:text-[#FB2E86]'>
                 Home <IoIosArrowDown className='text-[14px]' />
               </li>
+              </Link>
+              <Link >
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#FB2E86]'>Pages</li>
+              </Link>
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#FB2E86]'>Products</li>
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#FB2E86]'>Blog</li>
+              <Link to={"/shop"}>
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#FB2E86]'>Shop</li>
+              </Link>
               <li className='text-[#0D0E43] cursor-pointer font-loto hover:text-[#]'>Contact</li>
             </ul>
             <div
