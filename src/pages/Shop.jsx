@@ -12,7 +12,7 @@ const Shop = () => {
     <div>
       <Container>
         <div className="pt-36 pb-22 ">
-          <div className="flex flex-wrap justify-between">
+          <div className="flex gap-y-5 flex-wrap justify-between">
           {data.map(()=>(
            <div className="w-[31%]">
             <div className="bg-[#F6F7FB] flex justify-center items-center py-13 relative group">
@@ -30,7 +30,13 @@ const Shop = () => {
                     </div>
             </div>
             <div className="text-center">
-                <h4 className='py-4.5 font-main font-bold text-[18px] text-[#151875]'>Vel elit euismod</h4>
+                 
+                <h4 className='pt-4.5 font-main font-bold text-[18px] text-[#151875]'>Vel elit euismod</h4>
+                <div className="flex justify-center items-center gap-x-3 pt-2 pb-4">
+                  <div className="h-2.5 w-2.5 bg-[#DE9034] rounded-full"></div>
+                  <div className="h-2.5 w-2.5 bg-[#EC42A2] rounded-full"></div>
+                  <div className="h-2.5 w-2.5 bg-[#8568FF] rounded-full"></div>
+                 </div>
                 <p>$26.00 <span className=''>$42.00</span></p>
               </div>
            </div>
