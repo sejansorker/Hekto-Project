@@ -39,7 +39,49 @@ const Shop = () => {
           </div>
           </div>
         </div>
-        
+        <div className="flex pt-36 pb-22 ">
+          <div className="w-2/8">
+            <div className="pb-11">
+              <h4 className='text-[20px] w-fit pb-1 border-b-2 border-black text-[#151875] font-main font-bold'>Product Brand</h4>
+               <div className="flex flex-col gap-3 mt-4">
+             <label className="flex items-center gap-2 cursor-pointer">
+            <input className="w-4 h-4 " type="checkbox" />
+             <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>Glamour Beauty</span>
+              </label>
+               <label className="flex items-center gap-2 cursor-pointer">
+               <input className="w-4 h-4 " type="checkbox" />
+                  <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>Velvet Touch</span>
+              </label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input className="w-4 h-4 " type="checkbox" />
+                 <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>Chic Cosmetics</span>
+             </label>
+                   <label className="flex items-center gap-2 cursor-pointer">
+              <input className="w-4 h-4 " type="checkbox" />
+              <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>Nail Couture</span>
+            </label>
+
+  <label className="flex items-center gap-2 cursor-pointer">
+    <input className="w-4 h-4 " type="checkbox" />
+    <span className='text-[#7E81A2] font-loto font-normal text-[16px]'>Calvin Klein</span>
+  </label>
+
+  <label className="flex items-center gap-2 cursor-pointer">
+    <input className="w-4 h-4 " type="checkbox" />
+    <span className='text-[#7E81A2] font-loto font-normal text-[16px]'>Chanel</span>
+  </label>
+
+  <label className="flex items-center gap-2 cursor-pointer">
+    <input className="w-4 h-4 " type="checkbox" />
+    <span className='text-[#7E81A2] font-loto font-normal text-[16px]'>Dior</span>
+  </label>
+</div>
+            </div>
+          </div>
+          <div className="w-6/8">
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </div>
+        </div>
         <div className="pt-36 pb-22 ">
           <div className="flex gap-y-20 flex-wrap justify-between">
           {data.map((item)=>(
