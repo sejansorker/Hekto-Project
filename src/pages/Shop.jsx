@@ -77,6 +77,24 @@ const Shop = () => {
   </label>
 </div>
             </div>
+            <div className="pb-11">
+              <h4 className='text-[20px] w-fit pb-1 border-b-2 border-black text-[#151875] font-main font-bold'>Discount Offer</h4>
+               <div className="flex flex-col gap-3 mt-4">
+             <label className="flex items-center gap-2 cursor-pointer">
+            <input className="w-4 h-4 " type="checkbox" />
+             <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>20% Cashback</span>
+              </label>
+               <label className="flex items-center gap-2 cursor-pointer">
+               <input className="w-4 h-4 " type="checkbox" />
+                  <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>5% Cashback Offer</span>
+              </label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input className="w-4 h-4 " type="checkbox" />
+                 <span  className='text-[#7E81A2] font-loto font-normal text-[16px]'>25% Discount Offer</span>
+             </label>
+                 
+</div>
+            </div>
           </div>
           <div className="w-6/8">
           aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
