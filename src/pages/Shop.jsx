@@ -2,10 +2,11 @@ import React, { useContext } from 'react'
 import { ProductApi } from '../components/ContextApi'
 import Container from '../components/Container'
 import { CiHeart, CiShoppingCart } from 'react-icons/ci'
-import { FaRegHeart, FaSearchPlus } from 'react-icons/fa'
+import { FaList, FaRegHeart, FaSearchPlus } from 'react-icons/fa'
 import One from "../assets/one.png"
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import ShopBanner from '../components/ShopBanner'
+import { IoGrid } from 'react-icons/io5'
 const Shop = () => {
   const data = useContext(ProductApi)
   
@@ -14,6 +15,31 @@ const Shop = () => {
     <div>
         <ShopBanner/>
       <Container>
+        <div className="flex items-center justify-between mt-30">
+          <div className="w-1/2">
+          <h4 className='text-[22px] text-[#151875] font-main font-bold pb-1'>Ecommerce Acceories & Fashion item </h4>
+          <p className='text-[12px] text-[##8A8FB9] font-main font-normal'>About 9,620 results (0.62 seconds)</p>
+          </div>
+          <div className="w-1/2">
+          <div className="flex items-center justify-end">
+            <div className="flex ">
+            <h5 className='text-[16px] text-[#3F509E] pr-2 font-loto font-normal'>Per Page:</h5>
+            <input className='w-13.5 pl-1 outline-0 text-[12px] text-[#3F509E] border-1 border-[#E7E6EF]' type="text" />
+          </div>
+          <div className="flex pl-7">
+            <h5 className='text-[16px] text-[#3F509E]  font-loto font-normal pr-2'>Sort By:</h5>
+            <select className='pl-2 w-24 text-[13px] outline-0 border-1  border-[#E7E6EF] text-[#8A8FB9]  font-loto font-normal' name="" id="">
+              <option className='text-[12px] text-[#3F509E] outline-0 font-loto font-normal' value="">Best Match</option>
+            </select>
+          </div>
+          <div className="pl-6 flex items-center gap-x-7">
+            <h5 className='flex items-center text-[16px] text-[#3F509E]  font-loto font-normal'>View: <IoGrid className='text-[#151875] ml-2' /> <FaList className='text-[#151875] ml-2' /></h5>
+            <input className='w-[162px] outline-0  border-1 border-[#E7E6EF] ' type="text" placeholder='searce'/>
+          </div>
+          </div>
+          </div>
+        </div>
+        
         <div className="pt-36 pb-22 ">
           <div className="flex gap-y-20 flex-wrap justify-between">
           {data.map((item)=>(
