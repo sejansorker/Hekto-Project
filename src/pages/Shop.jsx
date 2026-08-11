@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { ProductApi } from '../components/ContextApi'
 import Container from '../components/Container'
 import { CiHeart, CiShoppingCart } from 'react-icons/ci'
-import { FaList, FaRegHeart, FaSearchPlus } from 'react-icons/fa'
+import { FaList, FaRegHeart, FaRegStar, FaSearchPlus, FaStar } from 'react-icons/fa'
 import One from "../assets/one.png"
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import ShopBanner from '../components/ShopBanner'
@@ -95,6 +95,30 @@ const Shop = () => {
                  
 </div>
             </div>
+            <div className="pb-11">
+              <h4 className='text-[20px] w-fit pb-1 border-b-2 border-black text-[#151875] font-main font-bold'>Rating Item</h4>
+               <div className="flex flex-col gap-3 mt-4">
+             <label className="flex items-center gap-2 cursor-pointer">
+            <input className="w-4 h-4 " type="checkbox" />
+             <span  className='text-[#7E81A2] font-loto font-normal text-[16px] flex items-center'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar /> (2341)</span>
+              </label>
+               <label className="flex items-center gap-2 cursor-pointer">
+               <input className="w-4 h-4 " type="checkbox" />
+                  <span  className='text-[#7E81A2] font-loto font-normal text-[16px] flex items-center'><FaStar/><FaStar/><FaStar/><FaRegStar /><FaRegStar />(1726)</span>
+              </label>
+               <label className="flex items-center gap-2 cursor-pointer">
+               <input className="w-4 h-4 " type="checkbox" />
+                  <span  className='text-[#7E81A2] font-loto font-normal text-[16px] flex items-center'><FaStar/><FaStar/><FaRegStar /><FaRegStar /><FaRegStar />(258)</span>
+              </label>
+               <label className="flex items-center gap-2 cursor-pointer">
+               <input className="w-4 h-4 " type="checkbox" />
+                  <span  className='text-[#7E81A2] font-loto font-normal text-[16px] flex items-center'><FaStar/><FaStar/><FaRegStar /><FaRegStar /><FaRegStar />(25)</span>
+              </label>
+            
+                 
+</div>
+            </div>
+            
           </div>
           <div className="w-6/8">
           aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
