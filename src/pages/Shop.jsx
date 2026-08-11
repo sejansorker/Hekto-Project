@@ -2,30 +2,33 @@ import React, { useContext } from 'react'
 import { ProductApi } from '../components/ContextApi'
 import Container from '../components/Container'
 import { CiHeart, CiShoppingCart } from 'react-icons/ci'
-import { FaSearchPlus } from 'react-icons/fa'
+import { FaRegHeart, FaSearchPlus } from 'react-icons/fa'
 import One from "../assets/one.png"
+import { MdOutlineShoppingCart } from 'react-icons/md'
+import ShopBanner from '../components/ShopBanner'
 const Shop = () => {
   const data = useContext(ProductApi)
   
   
   return (
     <div>
+        <ShopBanner/>
       <Container>
         <div className="pt-36 pb-22 ">
-          <div className="flex gap-y-5 flex-wrap justify-between">
+          <div className="flex gap-y-20 flex-wrap justify-between">
           {data.map((item)=>(
            <div className="w-[31%]">
-            <div className="bg-[#F6F7FB] flex justify-center items-center py-13 relative group">
+            <div className="bg-[#F6F7FB] hover:bg-[#EBF4F3] duration-300 ease-in-out flex justify-center items-center py-13 relative group">
               <img src={item.thumbnail} className='w-50 h-50 ' alt="" />
                 <div className="gap-y-4 flex flex-col  absolute bottom-5 left-5 opacity-0 group-hover:opacity-100 duration-300 ease-in-out">
-                      <div className=" h-7.5 w-7.5 bg-[#fff] rounded-full flex items-center justify-center">
-                        <CiShoppingCart className='text-[16px] font-bold cursor-pointer  text-[#151875]' />
+                      <div className=" h-9.5 w-9.5 bg-[#fff] rounded-full cursor-pointer flex items-center justify-center">
+                        <MdOutlineShoppingCart className='text-[17px] font-bold text-[#151875]' />
                       </div>
-                      <div className="h-7.5 w-7.5 flex items-center justify-center bg-[#fff] rounded-full">
-                        <CiHeart className='text-[16px] cursor-pointer   text-[#151875]' />
+                      <div className="h-9.5 w-9.5 flex items-center cursor-pointer justify-center bg-[#fff] rounded-full">
+                        <FaRegHeart className='text-[16px] font-bold text-[#151875]' />
                       </div>
-                      <div className="h-7.5 w-7.5 flex items-center justify-center bg-[#fff] rounded-full">
-                        <FaSearchPlus className='text-[14px] cursor-pointer text-[#151875]' />
+                      <div className="h-9.5 w-9.5 flex items-center cursor-pointer justify-center bg-[#fff] rounded-full">
+                        <FaSearchPlus className='text-[14px] text-[#151875]' />
                       </div>
                     </div>
             </div>
@@ -47,5 +50,4 @@ const Shop = () => {
     </div>
   )
 }
-
 export default Shop
