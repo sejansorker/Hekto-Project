@@ -6,14 +6,19 @@ import Details2 from "../assets/frame2.png"
 import { FaStar } from 'react-icons/fa'
 const ProductDetails = () => {
   return (
-    <div className='pt-24 pb-30 bg-[#F6F5FF]'>
+    <div className=''>
+           <div className="pt-24 pb-30 bg-[#F6F5FF]">
             <Container>
                 <div className="">
                     <h2 className='text-[36px] text-[#101750] font-main font-bold pb-2'>Product Details</h2>
                     <p>Home.Pages.<span className='text-[#FB2E86] text-16px] font-main font-medium'>Product Details</span></p>
                 </div>
-                <div className="py-30 ">
-                   <div className="flex py-3">
+               
+            </Container>
+           </div>
+            <Container>
+                <div className="my-30 shadow-2xl shadow-[shadow-[#F6F4FD]">
+                   <div className="flex py-3 ">
                     <div className="w-1/2 flex gap-x-3">
                     <div className="w-[155px] ml-3">
                         <img className='h-[155px]' src={Details} alt="" />
@@ -38,9 +43,10 @@ const ProductDetails = () => {
                    </div>
                    </div>
                    </div>
-                </div>
+             </div>
             </Container>
         </div>
+        
   )
 }
 
