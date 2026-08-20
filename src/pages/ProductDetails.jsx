@@ -32,14 +32,14 @@ const ProductDetails = () => {
                    <div className="w-1/2">
                    <div className="">
                     <h4 className='font-main font-semibold text-[36px] text-[#0D134E] pb-1'>Playwood arm chair</h4>
-                    <i className='flex items-center'><FaStar/><FaStar/><FaStar/><FaStar/> <FaStar/></i>
-                    <p>$32.00</p>
-                    <h6>Color</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.</p>
-                    <button>Add To cart</button>
-                    <h5>Categories:</h5>
-                    <h6>Tags</h6>
-                    <p>Share</p>
+                        <i className='flex   text-[#FFC416]'><FaStar/><FaStar/><FaStar/><FaStar/> <FaStar/> <span className='text-[#151875] font-main font-normal text-[15px] pl-1.5'>(22)</span></i>
+                    <p className='py-3 font-main font-normal text-[16px] text-[#151875]'>$32.00</p>
+                    <h6 className='font-main font-bold text-[16px] text-[#0D134E] '>Color</h6>
+                    <p className='font-main font-normal text-[16px] text-[#A9ACC6] py-3 pr-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus porttitor purus, et volutpat sit.</p>
+                    <button className='font-main font-medium text-[17px] text-[#151875] border-2 border-[#151875] py-3 px-6'>Add To cart</button>
+                    <h5 className='font-main font-normal text-[16px] text-[#151875] pt-3'>Categories:</h5>
+                    <h6 className='font-main font-normal text-[16px] text-[#151875] py-2.5'>Tags</h6>
+                    <p className='font-main font-normal text-[16px] text-[#151875] '>Share</p>
                    </div>
                    </div>
                    </div>
