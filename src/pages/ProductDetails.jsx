@@ -17,8 +17,8 @@ const ProductDetails = () => {
             </Container>
            </div>
             <Container>
-                <div className="my-30 shadow-2xl shadow-[shadow-[#F6F4FD]">
-                   <div className="flex py-3 ">
+                <div className="my-30 shadow-[0_0_30px_rgba(0,0,0,0.08)]">
+                   <div className="flex py-3 items-center">
                     <div className="w-1/2 flex gap-x-3">
                     <div className="w-[155px] ml-3">
                         <img className='h-[155px]' src={Details} alt="" />
@@ -31,7 +31,7 @@ const ProductDetails = () => {
                     </div>
                    <div className="w-1/2">
                    <div className="">
-                    <h4>Playwood arm chair</h4>
+                    <h4 className='font-main font-semibold text-[36px] text-[#0D134E] pb-1'>Playwood arm chair</h4>
                     <i className='flex items-center'><FaStar/><FaStar/><FaStar/><FaStar/> <FaStar/></i>
                     <p>$32.00</p>
                     <h6>Color</h6>
