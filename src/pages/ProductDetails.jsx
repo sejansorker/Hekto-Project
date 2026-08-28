@@ -22,7 +22,7 @@ const ProductDetails = () => {
                     <div className="w-1/2 flex gap-x-3">
                     <div className="w-[155px] ml-3">
                         <img className='h-[155px]' src={Details} alt="" />
-                        <img className='h-[155px]' className='py-3' src={Details1} alt="" />
+                        <img className='h-[155px] py-3' src={Details1} alt="" />
                         <img className='h-[155px]' src={Details2} alt="" />
                     </div>
                     <div className="">
